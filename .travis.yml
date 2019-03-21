@@ -4,6 +4,6 @@ node_js:
 deploy:
   provider: heroku
   api_key: $HEROKU_KEY
-  app: pursuit-fruitsapp-mk 
+  app: pursuit-fruitsapp-ap 
   on: master 
   strategy: git
