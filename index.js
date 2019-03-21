@@ -8,6 +8,11 @@ app.get('/ping', (req,res)=>{
 
 })
 
+app.get('*', (req,res)=>{
+res.status(400).json('" 🍑 "," 🍑 "," 🍑 "')
+
+})
+
 const port = process.env.PORT || 5001;
 app.listen(port, ()=>{
 
