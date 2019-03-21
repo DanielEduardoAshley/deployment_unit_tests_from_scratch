@@ -8,7 +8,7 @@ app.get('/ping', (req,res)=>{
 
 })
 
-const port = 5001
+const port = 5001 || process.env.PORT;
 app.listen(port, ()=>{
 
     console.log(`listening on port ${port}`)
